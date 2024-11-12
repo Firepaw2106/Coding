@@ -20,4 +20,14 @@ body {
     color: rgb(229, 255, 0);
     background-color: brown;
     border: none;
+    cursor: pointer;
+}
+.list {
+    list-style: lower-greek;
+}
+img {
+position: fixed;
+width: 100px;
+top: 20px;
+right: 20px;
 }
