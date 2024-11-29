@@ -6,6 +6,7 @@ function mainPageView(){
     <div>
         <h1>Main Page</h1>
         <h2> Whelcome ${user.username}</h2>
+        <img src="${user.profilePicture}">
     </div>
     `;
 }

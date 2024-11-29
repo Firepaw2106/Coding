@@ -11,7 +11,7 @@ function updateView(){
         </div>
         <div>
             <button onclick="loggin()">Login</button>
-            <button>Signup</button>
+            <button onclick="goToSignupPage()">Signup</button>
         </div>
 
     </div>
