@@ -6,19 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="updateView()">
+<body onload=" updateView()">
 
-    <div id="app"></div>
+    <div id="container"></div>
     
-    <script src="model.js"></script>
+    <script src="./Main/model.js"></script>
+    <script src="./Main/view.js"></script>
+    <script src="./Main/controller.js"></script>
 
     <!-- LogginPage -->
-    <script src="loggInView.js"></script>
-    <script src="loggInController.js"></script>
+     <script src="./Pages/logginPages/loggInView.js"></script>
+     <script src="./Pages/logginPages/loggInController.js"></script>
+
+    <!-- SingupPage -->
+     <script src="./Pages/signupPages/signupPageView.js"></script>
+     <script src="./Pages/signupPages/signupPageController.js"></script>
 
     <!-- MainPage -->
-     <script src="mainPageView.js"></script>
-     <script src="mainPageController.js"></script>
+     <script src="./Pages/mainPage/mainPageView.js"></script>
+     <script src="./Pages/mainPage/mainPageController.js"></script>
 
 </body>
 </html>

@@ -25,7 +25,15 @@ function registerUser(){
 }
 
 function backToLogginPage(){
-    updateView();
+    clearSignUpFields();
     model.app.currentPage ="logginPage";
     updateView();
+}
+
+function clearSignUpFields(){
+let user =model.input.signUpView;
+user.username= "";
+user.password ="";
+user.rptPassword ="";
+user.email ="";
 }

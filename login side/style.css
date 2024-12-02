@@ -7,3 +7,9 @@ body {
     justify-content: center;
     text-align: center;
 }
+.inputDivContainerBeforeLoggin {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+}
