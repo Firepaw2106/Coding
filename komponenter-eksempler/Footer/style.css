@@ -1,11 +1,11 @@
 :root{
---background: #4B5267;
 --primery-color:#2E294E;
---secondery-color:#EFBCD5;
---third-color:#BE97C6;
---contrast-color:#8661C1;
+--secondery-color:#5B1C47;
+--third-color:#8B2D61;
+--contrast-color:#F55B8D;
 --dark-text: black;
 --light-text:white;
+--border-radius-mount: 20px;
 
 }
 
@@ -14,36 +14,113 @@ body{
     padding: 0;
     color: var(--light-text);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100vw;
 
+}
+
+hr{
+    background-color: var(--third-color);
+    height: 3px;
+    border: none;
 }
 
 #side-footer{
-    background-color: var(--background);
-    padding: 10%;
-    
+    background-color: var(--primery-color);
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container{
+    padding: 5%;
 }
 
 .footer-grid{
-    display:flex;
-    flex-direction:row;
     
-    /* display: grid;
+    display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(1,1fr);
-    gap: 5px; */
+    gap: 5px; 
 }
 
 .section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+}
+.section-1 img{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
 }
 
 
-@media (max-width: 770px){
+.section-2 button{
+    background-color: var(--contrast-color);
+    border: none;
+    border-radius: var(--border-radius-mount);
+    color: var(--primery-color);
+    padding: 8px;
+    margin-top: 10px;
+}
+.section-2 button:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: var(--third-color);
+    color: var(--light-text);
+}
+
+#inputEmail{
+    border: 4px solid var(--third-color);
+    border-radius: var(--border-radius-mount);
+    padding: 5px;
+    
+}
+
+
+#inputEmail:focus{
+    border: 4px solid var(--contrast-color);
+    outline: none;
+
+}
+
+#sosial-media{
+    transform: scale(1.5);
+    color: var(--contrast-color);
+}
+
+#sosial-media i{
+    margin: 5px;
+    cursor: pointer;
+}
+.kontakt i{
+    color: var(--contrast-color);
+}
+.kontakt h3{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.personvern{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 700px){
 
     .footer-grid{
-        /* display: block; */
+         display: block;
+    }
+
+    .section-1 p{
+        width: 300px;
     }
 }
 
